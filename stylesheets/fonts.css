@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Arame Mono';
+  src: url('../fonts/ArameMono.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Arame Thin';
+  src: url('../fonts/ArameMono-Thin.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Arame Bold';
+  src: url('../fonts/ArameMono-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Arame Stencil';
+  src: url('../fonts/ArameMono-Stencil.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
