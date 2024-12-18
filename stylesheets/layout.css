@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: 'Arame Mono', sans-serif;
+  font-weight: 400;
+  background-color: #35003c;
+}
+.screen-1 {
+  width: 100vw;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.screen-1 div {
+  width: 9.7vw;
+}
+.begin-window {
+  background-image: url('..images/main1.svg');
+}
+.logo {
+  margin-top: 1.43vw;
+  margin-right: 3.9vw;
+  background-image: url('..images/logo-lime.svg');
+}
+.logo img {
+  width: 100%;
+  animation: rotate 2s infinite linear;
+}
+.humanization {
+  font-size: 3vw;
+  font-family: 'Arame Mono', sans-serif;
+  color: #e502a1;
+  margin-top: 2.5vw;
+}
+.connection-stable {
+  font-family: 'Sansation';
+  color: white;
+}
+.card-1 {
+  background-image: url('..images/rectangle-back1.svg');
+  margin-top: 77vw;
+}
+.system-start {
+  font-family: 'Arame Thin';
+  color: #d1e0e9;
+  overflow: hidden;
+  border-right: 0.15em solid lime;
+  margin: 0 auto;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}

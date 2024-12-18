@@ -22,3 +22,39 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: 'Sansation Bold';
+  src: url('../fonts/Sansation-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Sansation Bold Italic';
+  src: url('../fonts/Sansation-BoldItalic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Sansation Italic';
+  src: url('../fonts/Sansation-Italic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Sansation Light';
+  src: url('../fonts/Sansation-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Sansation Light Italic';
+  src: url('../fonts/Sansation-LightItalic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Sansation';
+  src: url('../fonts/Sansation-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
