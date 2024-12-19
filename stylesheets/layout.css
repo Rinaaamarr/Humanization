@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arame Mono', sans-serif;
+  font-weight: 400;
+  background-color: #35003c;
+}
+header {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 3vw;
+  background-color: #400048;
+  border-bottom: 2px solid black;
+}
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.humanization {
+  font-size: 3vw;
+  font-family: 'Arame Mono', sans-serif;
+  color: white;
+}
+.container .logo img {
+  width: 10%;
+}
+.logo {
+  animation: rotate 2s infinite linear;
+}
+.charging {
+  width: 86px;
+  height: 35px;
+  background-image: url('../images/charging.svg');
+  position: absolute;
+  margin-top: -2px;
+  margin-left: 65px;
+  animation: charging 4s steps(4) infinite;
+}
+/* .screen-1 div {
+  width: 9.7vw;
+}
+.begin-window {
+  background-image: url('../images/main1.svg');
+}
+.logo {
+  margin-top: 1.43vw;
+  margin-right: 3.9vw;
+  background-image: url('../images/logo-lime.svg');
+}
+
+
+
+.card-1 {
+  background-image: url('../images/rectangle-back1.svg');
+  margin-top: 77vw;
+}
+.system-start {
+  font-family: 'Arame Thin';
+  color: #d1e0e9;
+  overflow: hidden;
+  border-right: 0.15em solid lime;
+  margin: 0 auto;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+} */
