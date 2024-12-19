@@ -25,6 +25,7 @@ header > div {
   font-size: 3vw;
   font-family: 'Arame Mono', sans-serif;
   color: white;
+  animation: moveHum 7s ease infinite;
 }
 .container .logo img {
   width: 10%;
@@ -35,37 +36,91 @@ header > div {
 .charging {
   width: 86px;
   height: 35px;
-  background-image: url('../images/charging.svg');
   position: absolute;
   margin-top: -2px;
   margin-left: 65px;
-  animation: charging 4s steps(4) infinite;
+  animation: charging 4s steps(1) infinite;
 }
-/* .screen-1 div {
-  width: 9.7vw;
+.connection-stable {
+  width: 48px;
+  height: 38px;
+  background-image: url('../images/connection.svg');
 }
-.begin-window {
-  background-image: url('../images/main1.svg');
+.bracket {
+  margin-top: -500px;
+  margin-left: 50px;
+  display: flex;
+  position: relative;
 }
-.logo {
-  margin-top: 1.43vw;
-  margin-right: 3.9vw;
-  background-image: url('../images/logo-lime.svg');
+.side-right {
+  margin-left: 502px;
+  animation: animRight 1s ease infinite;
 }
-
-
-
-.card-1 {
-  background-image: url('../images/rectangle-back1.svg');
-  margin-top: 77vw;
+.side-left {
+  animation: animLeft 1s ease infinite;
 }
-.system-start {
-  font-family: 'Arame Thin';
+section {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 3vw;
+}
+.card-1 img {
+  margin-right: -200px;
+  margin-top: 50px;
+}
+.android {
+  font-size: 3vw;
+  font-family: 'Arame Stencil', sans-serif;
+  color: #0ae227;
+  margin-left: -450px;
+  margin-top: 25px;
+}
+.rk-200 {
+  font-size: 6vw;
+  font-family: 'Arame Thin', sans-serif;
+  color: #0ae227;
+  margin-left: -190px;
+  margin-top: 100px;
+}
+.line1 {
+  position: absolute;
+  font-size: 34px;
+  font-family: 'Arame Thin', sans-serif;
   color: #d1e0e9;
   overflow: hidden;
-  border-right: 0.15em solid lime;
   margin: 0 auto;
   white-space: nowrap;
   letter-spacing: 0.15em;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-} */
+  margin-left: -630px;
+  margin-top: -350px;
+  animation: typing 3.5s steps(40, end);
+}
+.line2 {
+  position: absolute;
+  font-size: 34px;
+  font-family: 'Arame Thin', sans-serif;
+  color: #d1e0e9;
+  overflow: hidden;
+  margin: 0 auto;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  margin-left: -630px;
+  margin-top: -345px;
+  padding-top: 35px;
+  animation: typing 3.5s steps(40, end);
+}
+.line3 {
+  font-size: 34px;
+  font-family: 'Arame Thin', sans-serif;
+  color: #d1e0e9;
+  overflow: hidden;
+  margin: 0 auto;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  margin-left: -630px;
+  margin-top: -340px;
+  padding-top: 73px;
+  animation: typing 3.5s steps(40, end);
+}
