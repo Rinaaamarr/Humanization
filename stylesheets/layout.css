@@ -31,33 +31,68 @@ header > div {
   width: 10%;
 }
 .logo {
-  animation: rotate 2s infinite linear;
+  background-image: url('../images/logo-lime.svg');
+  width: 7vw;
+  height: 7vw;
+  background-repeat: no-repeat;
+  background-size: 7vw 7vw;
+  /* animation: rotate 2s infinite linear; */
 }
-.charging {
-  width: 86px;
-  height: 35px;
-  position: absolute;
-  margin-top: -2px;
-  margin-left: 65px;
-  animation: charging 4s steps(1) infinite;
+.battery {
+  background-image: url('../images/charging-animation.svg');
+  width: 6.8vw;
+  height: 2.7vw;
+  animation: charging 2s steps(1) infinite;
 }
 .connection-stable {
-  width: 48px;
-  height: 38px;
-  background-image: url('../images/connection.svg');
+  background-image: url('../images/connection-anim.svg');
+  width: 4.75vw;
+  height: 3.125vw;
+  animation: connect 1s steps(1) infinite;
 }
 .bracket {
-  margin-top: -500px;
-  margin-left: 50px;
+  margin-top: -42vw;
+  margin-left: 1vw;
   display: flex;
   position: relative;
 }
 .side-right {
-  margin-left: 502px;
+  margin-left: 39.2vw;
   animation: animRight 1s ease infinite;
 }
 .side-left {
   animation: animLeft 1s ease infinite;
+}
+.typewriter p {
+  font-weight: 300;
+  font-family: 'Arame Thin', sans-serif;
+  font-size: 2.6vw;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #d1e0e9;
+  /* margin-left: -50vw; */
+}
+.typewriter p:nth-child(1) {
+  width: 30vw;
+  animation: type 2s;
+  margin-left: -50vw;
+  margin-top: -27vw;
+}
+.typewriter p:nth-child(2) {
+  width: 60vw;
+  margin-left: -50vw;
+  opacity: 0;
+  animation: type2 1s steps(80, end);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.typewriter p:nth-child(3) {
+  width: 50vw;
+  margin-left: -50vw;
+  opacity: 0;
+  animation: type3 1s steps(70, end);
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 section {
   display: flex;
@@ -66,61 +101,382 @@ section {
   justify-content: space-between;
   padding: 1vw 3vw;
 }
-.card-1 img {
-  margin-right: -200px;
-  margin-top: 50px;
+.card-1 {
+  width: 45.3vw;
+  height: 60.6vw;
+  background-color: #230028;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin-right: -16.75vw;
+  margin-top: 4vw;
 }
 .android {
   font-size: 3vw;
   font-family: 'Arame Stencil', sans-serif;
   color: #0ae227;
-  margin-left: -450px;
-  margin-top: 25px;
+  margin-left: -34vw;
+  margin-top: 2vw;
 }
 .rk-200 {
   font-size: 6vw;
   font-family: 'Arame Thin', sans-serif;
   color: #0ae227;
-  margin-left: -190px;
-  margin-top: 100px;
+  margin-left: -13vw;
+  margin-top: 6vw;
 }
-.line1 {
+.robot {
+  width: 43vw;
+  height: 42vw;
+  border-radius: 12px;
+  margin-left: -93vw;
+  margin-bottom: -58.7vw;
+  opacity: 0.5;
+}
+.noise {
+  height: 100vh;
+  background-image: url('../images/noisy.png');
+}
+.noise:after {
+  animation: grain 8s steps(10) infinite;
+  background-image: url('../images/noisy.png');
+  content: '';
+  height: 300%;
+  left: -50%;
+  opacity: 0.3;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+}
+.card-2 {
+  width: 94.5vw;
+  height: 28.5vw;
+  background-color: #230028;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin-left: 1vw;
+  margin-top: 4.2vw;
+}
+.emotions {
+  width: 35.6vw;
+  height: 5.7vw;
+  background-color: #c7008b;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   position: absolute;
-  font-size: 34px;
-  font-family: 'Arame Thin', sans-serif;
-  color: #d1e0e9;
-  overflow: hidden;
-  margin: 0 auto;
-  white-space: nowrap;
-  letter-spacing: 0.15em;
-  margin-left: -630px;
-  margin-top: -350px;
-  animation: typing 3.5s steps(40, end);
+  margin-left: 3.3vw;
+  margin-top: -15.3vw;
 }
-.line2 {
+.em-meaning {
+  width: 41.64vw;
+  height: 5.7vw;
+  border: 3px solid #c7008b;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   position: absolute;
-  font-size: 34px;
-  font-family: 'Arame Thin', sans-serif;
-  color: #d1e0e9;
-  overflow: hidden;
-  margin: 0 auto;
-  white-space: nowrap;
-  letter-spacing: 0.15em;
-  margin-left: -630px;
-  margin-top: -345px;
-  padding-top: 35px;
-  animation: typing 3.5s steps(40, end);
+  margin-left: 38.3vw;
+  margin-top: -15.3vw;
 }
-.line3 {
-  font-size: 34px;
-  font-family: 'Arame Thin', sans-serif;
+.what-is {
+  font-size: 4vw;
+  font-family: 'Sansation Bold', sans-serif;
   color: #d1e0e9;
-  overflow: hidden;
-  margin: 0 auto;
-  white-space: nowrap;
-  letter-spacing: 0.15em;
-  margin-left: -630px;
-  margin-top: -340px;
-  padding-top: 73px;
-  animation: typing 3.5s steps(40, end);
+  position: absolute;
+  margin-bottom: 15vw;
+  margin-left: 9vw;
+}
+.meaning {
+  font-size: 2vw;
+  font-family: 'Sansation Light', sans-serif;
+  color: #d1e0e9;
+  position: absolute;
+  margin-bottom: 15.5vw;
+  margin-left: 42vw;
+}
+.terms1 {
+  position: absolute;
+  margin-left: -90vw;
+  margin-top: -7vw;
+}
+.terms2 {
+  position: absolute;
+  margin-left: -68vw;
+  margin-top: -5.5vw;
+}
+.term3 {
+  position: absolute;
+  margin-left: -60vw;
+  margin-top: 11.9vw;
+}
+.term4 {
+  position: absolute;
+  margin-left: -42vw;
+  margin-top: -5.5vw;
+}
+.terms5 {
+  position: absolute;
+  margin-left: -34vw;
+  margin-top: -6.3vw;
+}
+.terms6 {
+  position: absolute;
+  margin-left: -11vw;
+  margin-top: -12.5vw;
+}
+.term7 {
+  position: absolute;
+  margin-left: -6.8vw;
+  margin-top: 11.9vw;
+}
+.hexagon1 {
+  --b: 6px;
+  height: 4.5vw;
+  position: absolute;
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(
+    0 50%,
+    50% -50%,
+    100% 50%,
+    50% 150%,
+    0 50%,
+    var(--b) 50%,
+    calc(25% + var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(75% - var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(100% - var(--b)) 50%,
+    calc(75% - var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    calc(25% + var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    var(--b) 50%
+  );
+  background: linear-gradient(60deg, #c7008b, #c7008b);
+  margin-left: 16vw;
+  margin-top: 21.5vw;
+}
+.hexagon2 {
+  --b: 6px;
+  height: 4.2vw;
+  position: absolute;
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(
+    0 50%,
+    50% -50%,
+    100% 50%,
+    50% 150%,
+    0 50%,
+    var(--b) 50%,
+    calc(25% + var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(75% - var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(100% - var(--b)) 50%,
+    calc(75% - var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    calc(25% + var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    var(--b) 50%
+  );
+  background: linear-gradient(60deg, #c7008b, #c7008b);
+  margin-left: 4.5vw;
+  margin-top: 14.5vw;
+}
+.hexagon3 {
+  --b: 6px;
+  height: 4.2vw;
+  position: absolute;
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(
+    0 50%,
+    50% -50%,
+    100% 50%,
+    50% 150%,
+    0 50%,
+    var(--b) 50%,
+    calc(25% + var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(75% - var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(100% - var(--b)) 50%,
+    calc(75% - var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    calc(25% + var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    var(--b) 50%
+  );
+  background: linear-gradient(60deg, #c7008b, #c7008b);
+  margin-left: 25vw;
+  margin-top: 15.3vw;
+}
+.hexagon4 {
+  --b: 6px;
+  height: 4.2vw;
+  position: absolute;
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(
+    0 50%,
+    50% -50%,
+    100% 50%,
+    50% 150%,
+    0 50%,
+    var(--b) 50%,
+    calc(25% + var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(75% - var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(100% - var(--b)) 50%,
+    calc(75% - var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    calc(25% + var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    var(--b) 50%
+  );
+  background: linear-gradient(60deg, #c7008b, #c7008b);
+  margin-left: 38.5vw;
+  margin-top: -0.5vw;
+}
+.hexagon5 {
+  --b: 6px;
+  height: 4.2vw;
+  position: absolute;
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(
+    0 50%,
+    50% -50%,
+    100% 50%,
+    50% 150%,
+    0 50%,
+    var(--b) 50%,
+    calc(25% + var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(75% - var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(100% - var(--b)) 50%,
+    calc(75% - var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    calc(25% + var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    var(--b) 50%
+  );
+  background: linear-gradient(60deg, #c7008b, #c7008b);
+  margin-left: 39.5vw;
+  margin-top: 22.4vw;
+}
+.hexagon6 {
+  --b: 6px;
+  height: 4.2vw;
+  position: absolute;
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(
+    0 50%,
+    50% -50%,
+    100% 50%,
+    50% 150%,
+    0 50%,
+    var(--b) 50%,
+    calc(25% + var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(75% - var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(100% - var(--b)) 50%,
+    calc(75% - var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    calc(25% + var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    var(--b) 50%
+  );
+  background: linear-gradient(60deg, #c7008b, #c7008b);
+  margin-left: 51.5vw;
+  margin-top: 19.5vw;
+}
+.hexagon7 {
+  --b: 6px;
+  height: 4.2vw;
+  position: absolute;
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(
+    0 50%,
+    50% -50%,
+    100% 50%,
+    50% 150%,
+    0 50%,
+    var(--b) 50%,
+    calc(25% + var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(75% - var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(100% - var(--b)) 50%,
+    calc(75% - var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    calc(25% + var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    var(--b) 50%
+  );
+  background: linear-gradient(60deg, #c7008b, #c7008b);
+  margin-left: 63.5vw;
+  margin-top: 24vw;
+}
+.hexagon8 {
+  --b: 6px;
+  height: 4.2vw;
+  position: absolute;
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(
+    0 50%,
+    50% -50%,
+    100% 50%,
+    50% 150%,
+    0 50%,
+    var(--b) 50%,
+    calc(25% + var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(75% - var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(100% - var(--b)) 50%,
+    calc(75% - var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    calc(25% + var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    var(--b) 50%
+  );
+  background: linear-gradient(60deg, #c7008b, #c7008b);
+  margin-left: 73.8vw;
+  margin-top: 8vw;
+}
+.hexagon9 {
+  --b: 6px;
+  height: 4.2vw;
+  position: absolute;
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(
+    0 50%,
+    50% -50%,
+    100% 50%,
+    50% 150%,
+    0 50%,
+    var(--b) 50%,
+    calc(25% + var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(75% - var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(100% - var(--b)) 50%,
+    calc(75% - var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    calc(25% + var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    var(--b) 50%
+  );
+  background: linear-gradient(60deg, #c7008b, #c7008b);
+  margin-left: 82vw;
+  margin-top: 0vw;
+}
+.hexagon10 {
+  --b: 6px;
+  height: 3.2vw;
+  position: absolute;
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(
+    0 50%,
+    50% -50%,
+    100% 50%,
+    50% 150%,
+    0 50%,
+    var(--b) 50%,
+    calc(25% + var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(75% - var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(100% - var(--b)) 50%,
+    calc(75% - var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    calc(25% + var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    var(--b) 50%
+  );
+  background: linear-gradient(60deg, #c7008b, #c7008b);
+  margin-left: 90vw;
+  margin-top: 0.1vw;
+}
+.hexagon11 {
+  --b: 6px;
+  height: 4.2vw;
+  position: absolute;
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(
+    0 50%,
+    50% -50%,
+    100% 50%,
+    50% 150%,
+    0 50%,
+    var(--b) 50%,
+    calc(25% + var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(75% - var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
+    calc(100% - var(--b)) 50%,
+    calc(75% - var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    calc(25% + var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
+    var(--b) 50%
+  );
+  background: linear-gradient(60deg, #c7008b, #c7008b);
+  margin-left: 84vw;
+  margin-top: 20vw;
 }
