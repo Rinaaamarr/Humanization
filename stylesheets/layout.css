@@ -94,6 +94,17 @@ header > div {
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
+.typewriter p:nth-child(5) {
+  width: 30vw;
+  -webkit-text-fill-color: #0ae227;
+  font-family: 'Arame Mono', sans-serif;
+  font-size: 2.6vw;
+  margin-left: -50vw;
+  opacity: 0;
+  animation: type3 1s steps(30, end);
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
 section {
   display: flex;
   position: relative;
