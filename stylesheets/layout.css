@@ -43,12 +43,14 @@ header > div {
   width: 6.8vw;
   height: 2.7vw;
   animation: charging 2s steps(1) infinite;
+  background-size: 35vw 100%;
 }
 .connection-stable {
   background-image: url('../images/connection-anim.svg');
   width: 4.75vw;
   height: 3.125vw;
   animation: connect 1s steps(1) infinite;
+  background-size: 16.7vw 100%;
 }
 .bracket {
   margin-top: -42vw;
@@ -64,7 +66,8 @@ header > div {
   animation: animLeft 1s ease infinite;
 }
 .typewriter {
-  margin-left: -28vw;
+  margin-left: 51vw;
+  margin-top: 15vw;
 }
 .typewriter p {
   font-weight: 300;
@@ -73,11 +76,12 @@ header > div {
   white-space: nowrap;
   overflow: hidden;
   color: #d1e0e9;
+  position: relative;
 }
 .typewriter p:nth-child(1) {
   width: 30vw;
   animation: type 2s;
-  margin-left: -34vw;
+  margin-left: -50vw;
   margin-top: -14vw;
 }
 .typewriter p:nth-child(2) {
@@ -206,6 +210,7 @@ section {
   border-radius: 12px;
   margin-right: -16.75vw;
   margin-top: 4vw;
+  position: relative;
 }
 .android {
   font-size: 3vw;
@@ -221,13 +226,31 @@ section {
   margin-left: -13vw;
   margin-top: 6vw;
 }
-.robot {
+.robot-humanoid {
+  margin-left: 3vw;
+}
+.robot-humanoid {
+  background-image: url(../images/robot-main.jpg);
+  width: 36vw;
+  height: 34vw;
+  position: relative;
+  border-radius: 12px;
+  margin-left: -34vw;
+  margin-top: 21.4vw;
+  opacity: 0.5;
+  scale: 1.25;
+}
+.robot-humanoid:hover {
+  background-image: url('../images/main2.jpg');
   width: 43vw;
   height: 42vw;
   border-radius: 12px;
-  margin-left: -93vw;
-  margin-bottom: -58.7vw;
+  margin-left: -40vw;
+  margin-top: 21.35vw;
   opacity: 0.5;
+}
+.card-1 {
+  margin-right: -5vw;
 }
 .noise {
   height: 100vh;
@@ -316,14 +339,26 @@ section {
 }
 .terms6 {
   position: absolute;
-  margin-left: -11vw;
-  margin-top: -12.5vw;
+  margin-left: -10vw;
+  margin-top: -12vw;
 }
 .term7 {
   position: absolute;
   margin-left: -6.8vw;
   margin-top: 11.9vw;
 }
+/* .plus {
+  font-family: 'Sansation', sans-serif;
+  font-size: 4.6vw;
+  -webkit-text-fill-color: #c7008b;
+  text-align: center;
+  opacity: 1;
+}
+.plus:hover {
+  clip-path: none;
+  background: none;
+  opacity: 0;
+} */
 .hexagon1 {
   --b: 6px;
   height: 4.5vw;
@@ -346,6 +381,25 @@ section {
   background: linear-gradient(60deg, #c7008b, #c7008b);
   margin-left: 16vw;
   margin-top: 21.5vw;
+}
+.hexagon1 p {
+  font-family: 'Sansation', sans-serif;
+  font-size: 1.4vw;
+  -webkit-text-fill-color: #d1e0e9;
+  opacity: 0;
+  text-align: center;
+  margin-top: 1vw;
+}
+.hexagon1:hover {
+  clip-path: none;
+  background: none;
+  border: 0.4vw solid #c7008b;
+  width: 9vw;
+}
+.hexagon1:hover p {
+  clip-path: none;
+  background: none;
+  opacity: 1;
 }
 .hexagon2 {
   --b: 6px;
@@ -370,6 +424,25 @@ section {
   margin-left: 4.5vw;
   margin-top: 14.5vw;
 }
+.hexagon2 p {
+  font-family: 'Sansation', sans-serif;
+  font-size: 1.1vw;
+  -webkit-text-fill-color: #d1e0e9;
+  opacity: 0;
+  text-align: center;
+  margin-top: 1vw;
+}
+.hexagon2:hover {
+  clip-path: none;
+  background: none;
+  border: 0.4vw solid #c7008b;
+  width: 9vw;
+}
+.hexagon2:hover p {
+  clip-path: none;
+  background: none;
+  opacity: 1;
+}
 .hexagon3 {
   --b: 6px;
   height: 4.2vw;
@@ -392,6 +465,25 @@ section {
   background: linear-gradient(60deg, #c7008b, #c7008b);
   margin-left: 25vw;
   margin-top: 15.3vw;
+}
+.hexagon3 p {
+  font-family: 'Sansation', sans-serif;
+  font-size: 1.2vw;
+  -webkit-text-fill-color: #d1e0e9;
+  opacity: 0;
+  text-align: center;
+  margin-top: 1vw;
+}
+.hexagon3:hover {
+  clip-path: none;
+  background: none;
+  border: 0.4vw solid #c7008b;
+  width: 9vw;
+}
+.hexagon3:hover p {
+  clip-path: none;
+  background: none;
+  opacity: 1;
 }
 .hexagon4 {
   --b: 6px;
@@ -416,6 +508,25 @@ section {
   margin-left: 38.5vw;
   margin-top: -0.5vw;
 }
+.hexagon4:hover {
+  clip-path: none;
+  background: none;
+  border: 0.4vw solid #c7008b;
+  width: 9vw;
+}
+.hexagon4 p {
+  font-family: 'Sansation', sans-serif;
+  font-size: 1.2vw;
+  -webkit-text-fill-color: #d1e0e9;
+  opacity: 0;
+  text-align: center;
+  margin-top: 1vw;
+}
+.hexagon4:hover p {
+  clip-path: none;
+  background: none;
+  opacity: 1;
+}
 .hexagon5 {
   --b: 6px;
   height: 4.2vw;
@@ -438,6 +549,25 @@ section {
   background: linear-gradient(60deg, #c7008b, #c7008b);
   margin-left: 39.5vw;
   margin-top: 22.4vw;
+}
+.hexagon5:hover {
+  clip-path: none;
+  background: none;
+  border: 0.4vw solid #c7008b;
+  width: 9vw;
+}
+.hexagon5 p {
+  font-family: 'Sansation', sans-serif;
+  font-size: 1.2vw;
+  -webkit-text-fill-color: #d1e0e9;
+  opacity: 0;
+  text-align: center;
+  margin-top: 1vw;
+}
+.hexagon5:hover p {
+  clip-path: none;
+  background: none;
+  opacity: 1;
 }
 .hexagon6 {
   --b: 6px;
@@ -462,6 +592,25 @@ section {
   margin-left: 51.5vw;
   margin-top: 19.5vw;
 }
+.hexagon6:hover {
+  clip-path: none;
+  background: none;
+  border: 0.4vw solid #c7008b;
+  width: 9vw;
+}
+.hexagon6 p {
+  font-family: 'Sansation', sans-serif;
+  font-size: 1.2vw;
+  -webkit-text-fill-color: #d1e0e9;
+  opacity: 0;
+  text-align: center;
+  margin-top: 1vw;
+}
+.hexagon6:hover p {
+  clip-path: none;
+  background: none;
+  opacity: 1;
+}
 .hexagon7 {
   --b: 6px;
   height: 4.2vw;
@@ -484,6 +633,25 @@ section {
   background: linear-gradient(60deg, #c7008b, #c7008b);
   margin-left: 63.5vw;
   margin-top: 24vw;
+}
+.hexagon7:hover {
+  clip-path: none;
+  background: none;
+  border: 0.4vw solid #c7008b;
+  width: 9vw;
+}
+.hexagon7 p {
+  font-family: 'Sansation', sans-serif;
+  font-size: 1.2vw;
+  -webkit-text-fill-color: #d1e0e9;
+  opacity: 0;
+  text-align: center;
+  margin-top: 1vw;
+}
+.hexagon7:hover p {
+  clip-path: none;
+  background: none;
+  opacity: 1;
 }
 .hexagon8 {
   --b: 6px;
@@ -508,6 +676,25 @@ section {
   margin-left: 73.8vw;
   margin-top: 8vw;
 }
+.hexagon8:hover {
+  clip-path: none;
+  background: none;
+  border: 0.4vw solid #c7008b;
+  width: 9vw;
+}
+.hexagon8 p {
+  font-family: 'Sansation', sans-serif;
+  font-size: 1.2vw;
+  -webkit-text-fill-color: #d1e0e9;
+  opacity: 0;
+  text-align: center;
+  margin-top: 1vw;
+}
+.hexagon8:hover p {
+  clip-path: none;
+  background: none;
+  opacity: 1;
+}
 .hexagon9 {
   --b: 6px;
   height: 4.2vw;
@@ -531,30 +718,26 @@ section {
   margin-left: 82vw;
   margin-top: 0vw;
 }
-.hexagon10 {
-  --b: 6px;
-  height: 3.2vw;
-  position: absolute;
-  aspect-ratio: 1 / cos(30deg);
-  clip-path: polygon(
-    0 50%,
-    50% -50%,
-    100% 50%,
-    50% 150%,
-    0 50%,
-    var(--b) 50%,
-    calc(25% + var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
-    calc(75% - var(--b) * cos(60deg)) calc(100% - var(--b) * sin(60deg)),
-    calc(100% - var(--b)) 50%,
-    calc(75% - var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
-    calc(25% + var(--b) * cos(60deg)) calc(var(--b) * sin(60deg)),
-    var(--b) 50%
-  );
-  background: linear-gradient(60deg, #c7008b, #c7008b);
-  margin-left: 90vw;
-  margin-top: 0.1vw;
+.hexagon9:hover {
+  clip-path: none;
+  background: none;
+  border: 0.4vw solid #c7008b;
+  width: 9vw;
 }
-.hexagon11 {
+.hexagon9 p {
+  font-family: 'Sansation', sans-serif;
+  font-size: 1.2vw;
+  -webkit-text-fill-color: #d1e0e9;
+  opacity: 0;
+  text-align: center;
+  margin-top: 1vw;
+}
+.hexagon9:hover p {
+  clip-path: none;
+  background: none;
+  opacity: 1;
+}
+.hexagon10 {
   --b: 6px;
   height: 4.2vw;
   position: absolute;
@@ -576,6 +759,25 @@ section {
   background: linear-gradient(60deg, #c7008b, #c7008b);
   margin-left: 84vw;
   margin-top: 20vw;
+}
+.hexagon10:hover {
+  clip-path: none;
+  background: none;
+  border: 0.4vw solid #c7008b;
+  width: 9vw;
+}
+.hexagon10 p {
+  font-family: 'Sansation', sans-serif;
+  font-size: 1.2vw;
+  -webkit-text-fill-color: #d1e0e9;
+  opacity: 0;
+  text-align: center;
+  margin-top: 1vw;
+}
+.hexagon10:hover p {
+  clip-path: none;
+  background: none;
+  opacity: 1;
 }
 .card-3 {
   width: 34.5vw;
@@ -705,19 +907,65 @@ section {
   animation: loading3 1.5s linear infinite;
   animation-delay: 2.5s;
 }
-.mech-1 {
-  margin-left: -51.5vw;
-  margin-bottom: 26.75vw;
+.circle-stable {
+  margin-left: -51vw;
+  margin-bottom: 27.3vw;
 }
-.part-1 {
-  margin-left: -7.5vw;
-  margin-bottom: 25.3vw;
-  animation: rotation 1s infinite linear;
+.mech1 {
+  margin-left: -5.15vw;
+  margin-bottom: 30.2vw;
+  transform: rotate(90deg) translateX(3.65vw) rotate(-90deg);
+  animation: mech-1 2s linear infinite;
 }
-.nuclear {
-  margin-left: -51.5vw;
-  margin-bottom: 26.75vw;
-  animation: rotation-1 1s infinite linear;
+.mech-mid {
+  margin-left: -3.3vw;
+  margin-bottom: 29.7vw;
+  transform: rotate(90deg) translateX(1vw) rotate(-90deg);
+  animation: mech-mid 1s linear infinite;
+}
+.circle-stable2 {
+  margin-left: -6vw;
+  margin-bottom: 10.3vw;
+}
+.circle2 {
+  margin-left: -7.4vw;
+  margin-bottom: 11.15vw;
+  transform: rotate(90deg) translateX(0.5vw) rotate(-90deg);
+  animation: circle-2 2s linear infinite;
+}
+.mech2 {
+  margin-left: -5.15vw;
+  margin-bottom: 12.8vw;
+  transform: rotate(90deg) translateX(3.65vw) rotate(-90deg);
+  animation: mech-2 1s linear infinite;
+}
+.mech-mid2 {
+  margin-left: -2.3vw;
+  margin-bottom: 12.7vw;
+  transform: rotate(90deg) translateX(1vw) rotate(-90deg);
+  animation: mech-mid2 1.3s linear infinite;
+}
+.circle-stable3 {
+  margin-left: -6vw;
+  margin-bottom: -6.7vw;
+  transform: rotate(90deg) translateX(3.2vw) rotate(-90deg);
+  animation: stable3 2s linear infinite;
+}
+.circle3 {
+  margin-left: -7.4vw;
+  margin-bottom: -5.85vw;
+}
+.mech3 {
+  margin-left: -5.5vw;
+  margin-bottom: -3.7vw;
+  transform: rotate(90deg) translateX(3.55vw) rotate(-90deg);
+  animation: mech-3 1s linear infinite;
+}
+.mech-mid3 {
+  margin-left: -2.3vw;
+  margin-bottom: -4.3vw;
+  transform: rotate(90deg) translateX(1vw) rotate(-90deg);
+  animation: mech-mid3 1.3s linear infinite;
 }
 .block-1 {
   width: 34.5vw;
@@ -725,8 +973,9 @@ section {
   background-color: #230028;
   border: 2px solid black;
   border-radius: 12px;
-  margin-left: 1.1vw;
+  margin-left: 2vw;
   margin-top: 4vw;
+  position: relative;
 }
 .block-2 {
   width: 34.5vw;
@@ -734,18 +983,10 @@ section {
   background-color: #230028;
   border: 2px solid black;
   border-radius: 12px;
-  margin-right: -20vw;
-  margin-top: 5vw;
+  margin-right: 153vw;
+  margin-top: 4vw;
+  position: relative;
 }
-/* .block-3 {
-  width: 34.5vw;
-  height: 32.2vw;
-  background-color: #230028;
-  border: 2px solid black;
-  border-radius: 12px;
-  margin-left: -207vw;
-  margin-top: 72vw;
-} */
 .human-color {
   background-image: url('../images/human-color.svg');
   width: 23.57vw;
@@ -764,24 +1005,50 @@ section {
   transform: scale(1.25);
   margin-top: 4.5vw;
 }
-.dots1,
-.vector1,
-.maska1 {
+.mask1 {
   width: 36.6vw;
-  height: 38.4vw;
-  margin-left: 0.8vw;
+  height: 32.4vw;
+  margin-left: -0.1vw;
   margin-top: -2vw;
-  animation-duration: 4s;
-  animation-delay: 0s;
-  animation-play-state: running;
-  animation-iteration-count: infinite;
+  background-image: url('../images/mask1-anim.svg');
+  animation: mask-anim 4s steps(1) infinite;
 }
-.dots1 {
-  animation-name: dots1;
+.block-3 {
+  width: 34.5vw;
+  height: 32.2vw;
+  background-color: #230028;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin-left: -263vw;
+  margin-bottom: -72vw;
+  position: relative;
 }
-.vector1 {
-  animation-name: vector1;
+.block-4 {
+  width: 34.5vw;
+  height: 32.2vw;
+  background-color: #230028;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin-right: 2.5vw;
+  margin-bottom: -72.5vw;
+  position: relative;
 }
-.maska1 {
-  animation-name: mask1;
+.robot-color {
+  background-image: url('../images/robot.svg');
+  width: 23.57vw;
+  height: 23.8vw;
+  position: absolute;
+  margin-top: 4vw;
+  margin-left: 5.3vw;
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+.robot-color:hover {
+  background-image: url('../images/robot-bw.svg');
+  width: 23.57vw;
+  height: 21.7vw;
+  opacity: 0.8;
+  transform: scale(1.25);
+  margin-top: 5vw;
+  margin-left: 5vw;
 }
