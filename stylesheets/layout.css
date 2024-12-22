@@ -747,14 +747,41 @@ section {
   margin-top: 72vw;
 } */
 .human-color {
-  width: 27.57vw;
-  height: 27.8vw;
+  background-image: url('../images/human-color.svg');
+  width: 23.57vw;
+  height: 23.8vw;
   position: absolute;
-  margin-top: 2vw;
-  margin-left: 3.5vw;
+  margin-top: 4vw;
+  margin-left: 5.5vw;
+  opacity: 0.7;
+  transform: scale(1.2);
 }
-/* .human-color:hover {
-  width: 27.57vw;
-  height: 27.8vw;
+.human-color:hover {
+  width: 23.57vw;
+  height: 22.8vw;
   background-image: url('../images/person.svg');
-} */
+  opacity: 0.8;
+  transform: scale(1.25);
+  margin-top: 4.5vw;
+}
+.dots1,
+.vector1,
+.maska1 {
+  width: 36.6vw;
+  height: 38.4vw;
+  margin-left: 0.8vw;
+  margin-top: -2vw;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
+.dots1 {
+  animation-name: dots1;
+}
+.vector1 {
+  animation-name: vector1;
+}
+.maska1 {
+  animation-name: mask1;
+}

@@ -275,3 +275,55 @@
     transform: rotate(-360deg);
   }
 }
+
+@keyframes dots1 {
+  0% {
+    background-image: url('../images/dots1.svg');
+  }
+  25% {
+    background-image: url('../images/dots1.svg');
+  }
+  50% {
+    background-image: none;
+  }
+  75% {
+    background-image: none;
+  }
+  100% {
+    background-image: none;
+  }
+}
+@keyframes vector1 {
+  0% {
+    background-image: none;
+  }
+  25% {
+    background-image: none;
+  }
+  50% {
+    background-image: url('../images/vector1.svg');
+  }
+  75% {
+    background-image: none;
+  }
+  100% {
+    background-image: none;
+  }
+}
+@keyframes mask1 {
+  0% {
+    background-image: none;
+  }
+  25% {
+    background-image: none;
+  }
+  50% {
+    background-image: none;
+  }
+  75% {
+    background-image: url('../images/mask1.svg');
+  }
+  100% {
+    background-image: none;
+  }
+}
