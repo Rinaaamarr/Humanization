@@ -36,7 +36,7 @@ header > div {
   height: 7vw;
   background-repeat: no-repeat;
   background-size: 7vw 7vw;
-  /* animation: rotate 2s infinite linear; */
+  animation: rotate 1s infinite linear;
 }
 .battery {
   background-image: url('../images/charging-animation.svg');
@@ -73,7 +73,6 @@ header > div {
   white-space: nowrap;
   overflow: hidden;
   color: #d1e0e9;
-  /* margin-left: -50vw; */
 }
 .typewriter p:nth-child(1) {
   width: 30vw;
@@ -593,7 +592,7 @@ section {
   background-color: #230028;
   border: 2px solid black;
   border-radius: 12px;
-  margin-left: 10vw;
+  margin-left: 20vw;
   margin-top: 12vw;
 }
 .statistics {
@@ -707,11 +706,55 @@ section {
   animation-delay: 2.5s;
 }
 .mech-1 {
-  margin-left: -53.5vw;
+  margin-left: -51.5vw;
   margin-bottom: 26.75vw;
 }
 .part-1 {
-  margin-left: -8.5vw;
-  margin-bottom: 32.3vw;
-  animation: rotation 3s infinite linear;
+  margin-left: -7.5vw;
+  margin-bottom: 25.3vw;
+  animation: rotation 1s infinite linear;
 }
+.nuclear {
+  margin-left: -51.5vw;
+  margin-bottom: 26.75vw;
+  animation: rotation-1 1s infinite linear;
+}
+.block-1 {
+  width: 34.5vw;
+  height: 32.2vw;
+  background-color: #230028;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin-left: 1.1vw;
+  margin-top: 4vw;
+}
+.block-2 {
+  width: 34.5vw;
+  height: 32.2vw;
+  background-color: #230028;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin-right: -20vw;
+  margin-top: 5vw;
+}
+/* .block-3 {
+  width: 34.5vw;
+  height: 32.2vw;
+  background-color: #230028;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin-left: -207vw;
+  margin-top: 72vw;
+} */
+.human-color {
+  width: 27.57vw;
+  height: 27.8vw;
+  position: absolute;
+  margin-top: 2vw;
+  margin-left: 3.5vw;
+}
+/* .human-color:hover {
+  width: 27.57vw;
+  height: 27.8vw;
+  background-image: url('../images/person.svg');
+} */
