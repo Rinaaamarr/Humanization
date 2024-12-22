@@ -63,6 +63,9 @@ header > div {
 .side-left {
   animation: animLeft 1s ease infinite;
 }
+.typewriter {
+  margin-left: -28vw;
+}
 .typewriter p {
   font-weight: 300;
   font-family: 'Arame Thin', sans-serif;
@@ -75,8 +78,8 @@ header > div {
 .typewriter p:nth-child(1) {
   width: 30vw;
   animation: type 2s;
-  margin-left: -50vw;
-  margin-top: -27vw;
+  margin-left: -34vw;
+  margin-top: -14vw;
 }
 .typewriter p:nth-child(2) {
   width: 60vw;
@@ -103,6 +106,90 @@ header > div {
   opacity: 0;
   animation: type3 1s steps(30, end);
   animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+.typewriter p:nth-child(7) {
+  width: 30vw;
+  -webkit-text-fill-color: #e502a1;
+  font-family: 'Arame Mono', sans-serif;
+  font-size: 2.6vw;
+  margin-left: -50vw;
+  opacity: 0;
+  animation: type3 1s steps(60, end);
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+.typewriter p:nth-child(9) {
+  width: 60vw;
+  margin-left: -50vw;
+  opacity: 0;
+  animation: type3 1s steps(80, end);
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+.typewriter p:nth-child(10) {
+  width: 60vw;
+  margin-left: -50vw;
+  opacity: 0;
+  animation: type3 1s steps(90, end);
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+.typewriter p:nth-child(11) {
+  width: 60vw;
+  margin-left: -50vw;
+  opacity: 0;
+  animation: type3 1s steps(80, end);
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+}
+.typewriter p:nth-child(12) {
+  width: 60vw;
+  margin-left: -50vw;
+  opacity: 0;
+  animation: type3 1s steps(80, end);
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+.typewriter p:nth-child(13) {
+  width: 60vw;
+  margin-left: -50vw;
+  opacity: 0;
+  animation: type3 1s steps(80, end);
+  animation-delay: 9s;
+  animation-fill-mode: forwards;
+}
+.typewriter p:nth-child(15) {
+  width: 60vw;
+  font-family: 'Arame mono', sans-serif;
+  font-size: 2.6vw;
+  -webkit-text-fill-color: #e502a1;
+  margin-left: -50vw;
+  opacity: 0;
+  animation: type3 1s steps(80, end);
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+}
+.typewriter p:nth-child(16) {
+  width: 60vw;
+  font-family: 'Arame mono', sans-serif;
+  font-size: 2.6vw;
+  -webkit-text-fill-color: #e502a1;
+  margin-left: -50vw;
+  opacity: 0;
+  animation: type3 1s steps(80, end);
+  animation-delay: 11s;
+  animation-fill-mode: forwards;
+}
+.typewriter p:nth-child(18) {
+  width: 60vw;
+  font-family: 'Arame mono', sans-serif;
+  font-size: 2.6vw;
+  -webkit-text-fill-color: #0ae227;
+  margin-left: -50vw;
+  opacity: 0;
+  animation: type3 1s steps(80, end);
+  animation-delay: 12s;
   animation-fill-mode: forwards;
 }
 section {
@@ -490,4 +577,141 @@ section {
   background: linear-gradient(60deg, #c7008b, #c7008b);
   margin-left: 84vw;
   margin-top: 20vw;
+}
+.card-3 {
+  width: 34.5vw;
+  height: 43.5vw;
+  background-color: #230028;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin-left: 1.1vw;
+  margin-top: 3vw;
+}
+.card-4 {
+  width: 34.9vw;
+  height: 34.4vw;
+  background-color: #230028;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin-left: 10vw;
+  margin-top: 12vw;
+}
+.statistics {
+  font-family: 'Arame Stencil', sans-serif;
+  font-size: 4.1vw;
+  -webkit-text-fill-color: #0ae227;
+  position: absolute;
+  margin-left: 5vw;
+  margin-top: 3vw;
+}
+.identification {
+  font-family: 'Arame Stencil', sans-serif;
+  font-size: 4.1vw;
+  -webkit-text-fill-color: #0ae227;
+  position: absolute;
+  margin-left: 1.5vw;
+  margin-top: -6vw;
+}
+.finger {
+  position: absolute;
+  margin-left: 8.9vw;
+  margin-top: 6vw;
+}
+.scan-anim {
+  position: absolute;
+  margin-left: -2.2vw;
+  margin-top: -1vw;
+  animation: UpDown 3s linear infinite;
+}
+.stat-bar {
+  position: absolute;
+  margin-left: 6.2vw;
+  margin-top: 13vw;
+}
+.strength {
+  font-family: 'Sansation Light', sans-serif;
+  font-size: 1.95vw;
+  -webkit-text-fill-color: #d1e0e9;
+  text-align: center;
+  position: absolute;
+  margin-left: 15vw;
+  margin-top: 10.5vw;
+}
+.loading1 {
+  position: absolute;
+  margin-left: 10.35vw;
+  margin-top: 13.15vw;
+  animation: loading 2s linear infinite;
+}
+.stat-bar2 {
+  position: absolute;
+  margin-left: 6.2vw;
+  margin-top: 21vw;
+}
+.intelligence {
+  font-family: 'Sansation Light', sans-serif;
+  font-size: 1.95vw;
+  -webkit-text-fill-color: #d1e0e9;
+  text-align: center;
+  position: absolute;
+  margin-left: 13vw;
+  margin-top: 18.8vw;
+}
+.loading2 {
+  position: absolute;
+  margin-left: 10.35vw;
+  margin-top: 21.19vw;
+  animation: loading2 2s linear infinite;
+  animation-delay: 1s;
+}
+.stat-bar3 {
+  position: absolute;
+  margin-left: 6.2vw;
+  margin-top: 29vw;
+}
+.emotionality {
+  font-family: 'Sansation Light', sans-serif;
+  font-size: 1.95vw;
+  -webkit-text-fill-color: #d1e0e9;
+  text-align: center;
+  position: absolute;
+  margin-left: 9.5vw;
+  margin-top: 26.8vw;
+}
+.loading3 {
+  position: absolute;
+  margin-left: 10.35vw;
+  margin-top: 29.15vw;
+  animation: loading3 3s linear infinite;
+  animation-delay: 1.5s;
+}
+.stat-bar4 {
+  position: absolute;
+  margin-left: 6.2vw;
+  margin-top: 37vw;
+}
+.empathy {
+  font-family: 'Sansation Light', sans-serif;
+  font-size: 1.95vw;
+  -webkit-text-fill-color: #d1e0e9;
+  text-align: center;
+  position: absolute;
+  margin-left: 13.5vw;
+  margin-top: 34.8vw;
+}
+.loading4 {
+  position: absolute;
+  margin-left: 10.35vw;
+  margin-top: 37.16vw;
+  animation: loading3 1.5s linear infinite;
+  animation-delay: 2.5s;
+}
+.mech-1 {
+  margin-left: -53.5vw;
+  margin-bottom: 26.75vw;
+}
+.part-1 {
+  margin-left: -8.5vw;
+  margin-bottom: 32.3vw;
+  animation: rotation 3s infinite linear;
 }
