@@ -1091,3 +1091,14 @@ section {
   margin-left: 34.5vw;
   background-size: 200vw 100%;
 }
+.basement {
+  width: 100%;
+  height: 8vw;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 3vw;
+  background-color: #400048;
+  border-top: 2px solid black;
+}
