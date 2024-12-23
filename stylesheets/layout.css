@@ -25,7 +25,6 @@ header > div {
   font-size: 3vw;
   font-family: 'Arame Mono', sans-serif;
   color: white;
-  animation: moveHum 7s ease infinite;
 }
 .container .logo img {
   width: 10%;
@@ -43,26 +42,32 @@ header > div {
   width: 6.8vw;
   height: 2.7vw;
   animation: charging 2s steps(1) infinite;
-  background-size: 35vw 100%;
+  background-size: 34.25vw 100%;
 }
 .connection-stable {
   background-image: url('../images/connection-anim.svg');
   width: 4.75vw;
   height: 3.125vw;
   animation: connect 1s steps(1) infinite;
-  background-size: 16.7vw 100%;
+  background-size: 19vw 100%;
 }
 .bracket {
-  margin-top: -42vw;
-  margin-left: 1vw;
   display: flex;
-  position: relative;
+  justify-content: space-between;
+  padding: 2vw 1vw;
+  margin-top: 43vw;
 }
 .side-right {
+  width: 2vw;
+  height: 16.5vw;
+  display: flex;
   margin-left: 39.2vw;
   animation: animRight 1s ease infinite;
 }
 .side-left {
+  width: 2vw;
+  height: 16.5vw;
+  display: flex;
   animation: animLeft 1s ease infinite;
 }
 .typewriter {
@@ -72,11 +77,12 @@ header > div {
 .typewriter p {
   font-weight: 300;
   font-family: 'Arame Thin', sans-serif;
-  font-size: 2.6vw;
+  font-size: 2.35vw;
   white-space: nowrap;
   overflow: hidden;
   color: #d1e0e9;
   position: relative;
+  line-height: 155%;
 }
 .typewriter p:nth-child(1) {
   width: 30vw;
@@ -200,17 +206,17 @@ section {
   position: relative;
   align-items: center;
   justify-content: space-between;
-  padding: 1vw 3vw;
+  column-gap: 3vw;
+  margin-top: 5vw;
 }
 .card-1 {
   width: 45.3vw;
   height: 60.6vw;
   background-color: #230028;
-  border: 2px solid black;
   border-radius: 12px;
-  margin-right: -16.75vw;
-  margin-top: 4vw;
-  position: relative;
+  display: flex;
+  margin-top: -2.5vw;
+  margin-left: 4vw;
 }
 .android {
   font-size: 3vw;
@@ -227,30 +233,27 @@ section {
   margin-top: 6vw;
 }
 .robot-humanoid {
-  margin-left: 3vw;
-}
-.robot-humanoid {
   background-image: url(../images/robot-main.jpg);
-  width: 36vw;
+  width: 35.8vw;
   height: 34vw;
-  position: relative;
   border-radius: 12px;
-  margin-left: -34vw;
-  margin-top: 21.4vw;
   opacity: 0.5;
   scale: 1.25;
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 1vw;
+  margin-left: -27vw;
+  margin-top: -20.6vw;
 }
 .robot-humanoid:hover {
-  background-image: url('../images/main2.jpg');
-  width: 43vw;
-  height: 42vw;
+  background-image: url(../images/main2.jpg);
+  width: 35.8vw;
+  height: 34vw;
   border-radius: 12px;
-  margin-left: -40vw;
-  margin-top: 21.35vw;
   opacity: 0.5;
-}
-.card-1 {
-  margin-right: -5vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3vw 0.5vw;
 }
 .noise {
   height: 100vh;
@@ -266,6 +269,7 @@ section {
   position: fixed;
   top: -100%;
   width: 300%;
+  z-index: -3;
 }
 .card-2 {
   width: 94.5vw;
@@ -313,39 +317,53 @@ section {
   margin-left: 42vw;
 }
 .terms1 {
+  width: 17.3vw;
+  height: 19.5vw;
   position: absolute;
-  margin-left: -90vw;
+  margin-left: -97vw;
   margin-top: -7vw;
 }
 .terms2 {
+  width: 14.7vw;
+  height: 13vw;
   position: absolute;
-  margin-left: -68vw;
+  margin-left: -74vw;
   margin-top: -5.5vw;
 }
 .term3 {
+  width: 7.34vw;
+  height: 4.84vw;
   position: absolute;
-  margin-left: -60vw;
-  margin-top: 11.9vw;
+  margin-left: -66vw;
+  margin-top: 11.2vw;
 }
 .term4 {
   position: absolute;
-  margin-left: -42vw;
-  margin-top: -5.5vw;
+  margin-left: -49vw;
+  margin-top: -6.3vw;
+  width: 6.71vw;
+  height: 15.3vw;
 }
 .terms5 {
+  width: 18.1vw;
+  height: 18.75vw;
   position: absolute;
-  margin-left: -34vw;
+  margin-left: -41vw;
   margin-top: -6.3vw;
 }
 .terms6 {
+  width: 11.3vw;
+  height: 13.4vw;
   position: absolute;
-  margin-left: -10vw;
+  margin-left: -16vw;
   margin-top: -12vw;
 }
 .term7 {
+  width: 7.5vw;
+  height: 4.84vw;
   position: absolute;
-  margin-left: -6.8vw;
-  margin-top: 11.9vw;
+  margin-left: -12.4vw;
+  margin-top: 11.2vw;
 }
 /* .plus {
   font-family: 'Sansation', sans-serif;
@@ -379,7 +397,7 @@ section {
     var(--b) 50%
   );
   background: linear-gradient(60deg, #c7008b, #c7008b);
-  margin-left: 16vw;
+  margin-left: 18vw;
   margin-top: 21.5vw;
 }
 .hexagon1 p {
@@ -422,7 +440,7 @@ section {
   );
   background: linear-gradient(60deg, #c7008b, #c7008b);
   margin-left: 4.5vw;
-  margin-top: 14.5vw;
+  margin-top: 18vw;
 }
 .hexagon2 p {
   font-family: 'Sansation', sans-serif;
@@ -463,7 +481,7 @@ section {
     var(--b) 50%
   );
   background: linear-gradient(60deg, #c7008b, #c7008b);
-  margin-left: 25vw;
+  margin-left: 27.55vw;
   margin-top: 15.3vw;
 }
 .hexagon3 p {
@@ -505,8 +523,8 @@ section {
     var(--b) 50%
   );
   background: linear-gradient(60deg, #c7008b, #c7008b);
-  margin-left: 38.5vw;
-  margin-top: -0.5vw;
+  margin-left: 40vw;
+  margin-top: 0.5vw;
 }
 .hexagon4:hover {
   clip-path: none;
@@ -547,7 +565,7 @@ section {
     var(--b) 50%
   );
   background: linear-gradient(60deg, #c7008b, #c7008b);
-  margin-left: 39.5vw;
+  margin-left: 41vw;
   margin-top: 22.4vw;
 }
 .hexagon5:hover {
@@ -589,14 +607,15 @@ section {
     var(--b) 50%
   );
   background: linear-gradient(60deg, #c7008b, #c7008b);
-  margin-left: 51.5vw;
-  margin-top: 19.5vw;
+  margin-left: 52vw;
+  margin-top: 20.4vw;
 }
 .hexagon6:hover {
   clip-path: none;
   background: none;
   border: 0.4vw solid #c7008b;
   width: 9vw;
+  margin-top: 22vw;
 }
 .hexagon6 p {
   font-family: 'Sansation', sans-serif;
@@ -632,7 +651,7 @@ section {
   );
   background: linear-gradient(60deg, #c7008b, #c7008b);
   margin-left: 63.5vw;
-  margin-top: 24vw;
+  margin-top: 28.3vw;
 }
 .hexagon7:hover {
   clip-path: none;
@@ -673,8 +692,8 @@ section {
     var(--b) 50%
   );
   background: linear-gradient(60deg, #c7008b, #c7008b);
-  margin-left: 73.8vw;
-  margin-top: 8vw;
+  margin-left: 75.8vw;
+  margin-top: 9.5vw;
 }
 .hexagon8:hover {
   clip-path: none;
@@ -716,7 +735,7 @@ section {
   );
   background: linear-gradient(60deg, #c7008b, #c7008b);
   margin-left: 82vw;
-  margin-top: 0vw;
+  margin-top: 3vw;
 }
 .hexagon9:hover {
   clip-path: none;
@@ -765,6 +784,7 @@ section {
   background: none;
   border: 0.4vw solid #c7008b;
   width: 9vw;
+  margin-top: 19vw;
 }
 .hexagon10 p {
   font-family: 'Sansation', sans-serif;
