@@ -1052,3 +1052,42 @@ section {
   margin-top: 5vw;
   margin-left: 5vw;
 }
+.block-finish {
+  position: relative;
+  width: 89.4vw;
+  height: 21.17vw;
+  background-color: #230028;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin-top: 37vw;
+  margin-left: 1.8vw;
+}
+.scan-done {
+  font-family: 'Arame Thin', sans-serif;
+  font-size: 2.34vw;
+  text-align: center;
+  -webkit-text-fill-color: #d1e0e9;
+  margin-top: 3vw;
+}
+.access-gained {
+  font-family: 'Arame Stencil', sans-serif;
+  font-size: 4.5vw;
+  text-align: center;
+  -webkit-text-fill-color: #d1e0e9;
+  margin-top: 1vw;
+}
+.bar {
+  position: absolute;
+  margin-top: 3vw;
+  margin-left: 24vw;
+}
+.loading-finish {
+  background-image: url('../images/loading-finish.svg');
+  width: 4.2vw;
+  height: 3.2vw;
+  position: absolute;
+  animation: loading-finish 2s steps(1) infinite;
+  margin-top: 3.5vw;
+  margin-left: 34.5vw;
+  background-size: 200vw 100%;
+}
