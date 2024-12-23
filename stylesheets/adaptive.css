@@ -1,0 +1,10 @@
+/* десктоп 1366 */
+@media screen and (max-width: 1366px) {
+  .header,
+  .logo,
+  .battery,
+  .humanization,
+  .connection-stable {
+    display: flex;
+  }
+}
