@@ -309,15 +309,32 @@
     background-image: none;
   }
 }
+@keyframes color-change2 {
+  0% {
+    background-image: url('../images/lime-mask13.svg');
+  }
+  25% {
+    background-image: url('../images/mask-blue2.svg');
+  }
+  50% {
+    background-image: url('../images/mask-pink2.svg');
+  }
+  75% {
+    background-image: none;
+  }
+  100% {
+    background-image: none;
+  }
+}
 @keyframes color-change3 {
   0% {
-    background-image: none;
+    background-image: url('../images/mask3.svg');
   }
   25% {
     background-image: none;
   }
   50% {
-    background-image: url('../images/mask3.svg');
+    background-image: none;
   }
   75% {
     background-image: url('../images/mask1.svg');

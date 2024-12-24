@@ -202,11 +202,12 @@ header > div {
 }
 section {
   display: flex;
+  flex-wrap: nowrap;
   position: relative;
   align-items: center;
   justify-content: space-between;
   column-gap: 3vw;
-  margin-top: 5vw;
+  margin-top: 2vw;
 }
 .card-1 {
   width: 45.3vw;
@@ -684,7 +685,7 @@ section {
     var(--b) 50%
   );
   background: linear-gradient(60deg, #c7008b, #c7008b);
-  margin-left: 75.8vw;
+  margin-left: 75.6vw;
   margin-top: 9.5vw;
 }
 .hexagon8:hover {
@@ -692,6 +693,7 @@ section {
   background: none;
   border: 0.4vw solid #c7008b;
   width: 9vw;
+  margin-top: 12vw;
 }
 .hexagon8 p {
   font-family: 'Sansation', sans-serif;
