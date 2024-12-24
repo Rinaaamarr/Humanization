@@ -154,7 +154,7 @@
     left: 0;
   }
   50% {
-    left: 19.5vw;
+    left: 21.3vw;
   }
   100% {
     left: 0;
@@ -165,7 +165,7 @@
     left: 0;
   }
   50% {
-    left: 19.5vw;
+    left: 21.3vw;
   }
   100% {
     left: 0;
@@ -176,7 +176,7 @@
     left: 0;
   }
   50% {
-    left: 19.5vw;
+    left: 21.3vw;
   }
   100% {
     left: 0;
@@ -187,7 +187,7 @@
     left: 0;
   }
   50% {
-    left: 19.5vw;
+    left: 21.3vw;
   }
   100% {
     left: 0;
@@ -378,12 +378,11 @@
     background-position: 0 0;
   }
 }
-@keyframes scroll {
+@keyframes basement {
   0% {
-    transform: translate(0, 0);
+    transform: translateX(0vw);
   }
-
   100% {
-    transform: translate(-100%, 0);
+    transform: translateX(104.4vw);
   }
 }

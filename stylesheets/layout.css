@@ -862,7 +862,7 @@ section {
   width: 2.73vw;
   height: 2.73vw;
   position: absolute;
-  margin-left: 10.35vw;
+  margin-left: 6.35vw;
   margin-top: 13.15vw;
   animation: loading 2s linear infinite;
 }
@@ -886,7 +886,7 @@ section {
   width: 2.73vw;
   height: 2.73vw;
   position: absolute;
-  margin-left: 10.35vw;
+  margin-left: 6.35vw;
   margin-top: 21.19vw;
   animation: loading2 2s linear infinite;
   animation-delay: 1s;
@@ -911,7 +911,7 @@ section {
   width: 2.73vw;
   height: 2.73vw;
   position: absolute;
-  margin-left: 10.35vw;
+  margin-left: 6.35vw;
   margin-top: 29.15vw;
   animation: loading3 3s linear infinite;
   animation-delay: 1.5s;
@@ -936,7 +936,7 @@ section {
   width: 2.73vw;
   height: 2.73vw;
   position: absolute;
-  margin-left: 10.35vw;
+  margin-left: 6.35vw;
   margin-top: 37.16vw;
   animation: loading3 1.5s linear infinite;
   animation-delay: 2.5s;
@@ -1163,13 +1163,8 @@ section {
   background-size: 200vw 100%;
 }
 .basement {
-  width: 100%;
-  height: 10.8vw;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1vw 3vw;
-  background-color: #400048;
-  border-top: 2px solid black;
+  background-image: url('../images/running1.svg');
+  width: 208.82vw;
+  height: 8.7vw;
+  animation: basement 1s linear infinite;
 }
