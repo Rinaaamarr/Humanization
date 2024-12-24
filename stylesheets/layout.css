@@ -1069,10 +1069,10 @@ section {
   position: absolute;
   margin-left: -1.2vw;
   margin-top: 34.5vw;
-  background-image: url(../images/lime-mask13.svg);
+  background-image: url(../images/mask33.svg);
   background-size: contain;
   animation: color-change2 2s linear infinite;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 .mask3 {
   width: 23.6vw;
@@ -1082,7 +1082,7 @@ section {
   background-image: url(../images/mask3.svg);
   background-size: contain;
   animation: color-change3 2s linear infinite;
-  animation-delay: 3s;
+  animation-delay: 1.2s;
 }
 .block-3 {
   width: 34.5vw;

@@ -297,33 +297,33 @@
     background-image: url('../images/mask1.svg');
   }
   25% {
-    background-image: url('../images/lime-mask13.svg');
+    background-image: none;
   }
   50% {
-    background-image: url('../images/mask3.svg');
+    background-image: url('../images/mask33.svg');
   }
   75% {
     background-image: none;
   }
   100% {
-    background-image: none;
+    background-image: url('../images/mask3.svg');
   }
 }
 @keyframes color-change2 {
   0% {
-    background-image: url('../images/lime-mask13.svg');
+    background-image: url('../images/mask33.svg');
   }
   25% {
-    background-image: url('../images/mask-blue2.svg');
+    background-image: none;
   }
   50% {
-    background-image: url('../images/mask-pink2.svg');
+    background-image: url('../images/mask-blue2.svg');
   }
   75% {
     background-image: none;
   }
   100% {
-    background-image: none;
+    background-image: url('../images/mask-pink2.svg');
   }
 }
 @keyframes color-change3 {
@@ -334,13 +334,13 @@
     background-image: none;
   }
   50% {
-    background-image: none;
+    background-image: uurl('../images/mask33.svg');
   }
   75% {
-    background-image: url('../images/mask1.svg');
+    background-image: none;
   }
   100% {
-    background-image: url('../images/lime-mask13.svg');
+    background-image: url('../images/mask1.svg');
   }
 }
 @keyframes loading-finish {
