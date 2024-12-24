@@ -143,7 +143,7 @@
 @keyframes UpDown {
   0%,
   100% {
-    bottom: 30.9vw;
+    bottom: 28vw;
   }
   50% {
     bottom: 0;
@@ -268,37 +268,12 @@
     -webkit-transform: rotate(360deg) translateX(3.65vw) rotate(-360deg);
   }
 }
-@keyframes circle-2 {
-  from {
-    -webkit-transform: rotate(0deg) translateX(0.5vw) rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(-360deg) translateX(0.5vw) rotate(360deg);
-  }
-}
 @keyframes mech-mid2 {
   from {
     -webkit-transform: rotate(0deg) translateX(1vw) rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg) translateX(1vw) rotate(-360deg);
-  }
-}
-@keyframes stable3 {
-  0% {
-    transform: rotate(-360deg);
-  }
-  25% {
-    transform: rotate(-270deg);
-  }
-  50% {
-    transform: rotate(-180deg);
-  }
-  75% {
-    transform: rotate(-90deg);
-  }
-  100% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(-360deg) translateX(1vw) rotate(360deg);
   }
 }
 @keyframes mech-3 {
@@ -317,27 +292,38 @@
     -webkit-transform: rotate(360deg) translateX(1vw) rotate(-360deg);
   }
 }
-@keyframes mask-anim {
+@keyframes color-change1 {
   0% {
-    background-position: 0 0;
+    background-image: url('../images/mask1.svg');
   }
-  17% {
-    background-position: -36.6vw 0;
+  25% {
+    background-image: url('../images/lime-mask13.svg');
   }
-  34% {
-    background-position: -73.2vw 0;
+  50% {
+    background-image: url('../images/mask3.svg');
   }
-  51% {
-    background-position: -109.8vw 0;
-  }
-  68% {
-    background-position: -146.4vw 0;
-  }
-  85% {
-    background-position: -183vw 0;
+  75% {
+    background-image: none;
   }
   100% {
-    background-position: -219.6;
+    background-image: none;
+  }
+}
+@keyframes color-change3 {
+  0% {
+    background-image: none;
+  }
+  25% {
+    background-image: none;
+  }
+  50% {
+    background-image: url('../images/mask3.svg');
+  }
+  75% {
+    background-image: url('../images/mask1.svg');
+  }
+  100% {
+    background-image: url('../images/lime-mask13.svg');
   }
 }
 @keyframes loading-finish {
@@ -345,30 +331,33 @@
     background-position: 0 0;
   }
   11% {
-    background-position: -4.2vw 0;
+    background-position: -23vw 0;
   }
   22% {
-    background-position: -8.4vw 0;
+    background-position: -46vw 0;
   }
   33% {
-    background-position: -12.6vw 0;
+    background-position: -69vw 0;
   }
   44% {
-    background-position: -16.8vw 0;
+    background-position: -92vw 0;
   }
   55% {
-    background-position: -21vw 0;
+    background-position: -115vw 0;
   }
   66% {
-    background-position: -25.2vw 0;
+    background-position: -138vw 0;
   }
   77% {
-    background-position: -29.4vw 0;
+    background-position: -161vw 0;
   }
   88% {
-    background-position: -33.6vw 0;
+    background-position: -184vw 0;
+  }
+  99% {
+    background-position: -207vw 0;
   }
   100% {
-    background-position: -37.8vw 0;
+    background-position: 0 0;
   }
 }

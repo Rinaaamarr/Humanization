@@ -48,6 +48,7 @@ header > div {
   background-image: url('../images/connection-anim.svg');
   width: 4.75vw;
   height: 3.125vw;
+  margin-top: -0.5vw;
   animation: connect 1s steps(1) infinite;
   background-size: 19vw 100%;
 }
@@ -60,14 +61,12 @@ header > div {
 .side-right {
   width: 2vw;
   height: 16.5vw;
-  display: flex;
   margin-left: 39.2vw;
   animation: animRight 1s ease infinite;
 }
 .side-left {
   width: 2vw;
   height: 16.5vw;
-  display: flex;
   animation: animLeft 1s ease infinite;
 }
 .typewriter {
@@ -214,7 +213,6 @@ section {
   height: 60.6vw;
   background-color: #230028;
   border-radius: 12px;
-  display: flex;
   margin-top: -2.5vw;
   margin-left: 4vw;
 }
@@ -234,26 +232,21 @@ section {
 }
 .robot-humanoid {
   background-image: url(../images/robot-main.jpg);
-  width: 35.8vw;
-  height: 34vw;
+  background-size: contain;
+  width: 35.7vw;
+  height: 32.6vw;
   border-radius: 12px;
   opacity: 0.5;
   scale: 1.25;
-  display: flex;
-  justify-content: space-between;
-  padding: 1vw 1vw;
   margin-left: -27vw;
-  margin-top: -20.6vw;
+  margin-top: -22.5vw;
 }
 .robot-humanoid:hover {
   background-image: url(../images/main2.jpg);
-  width: 35.8vw;
-  height: 34vw;
+  width: 35.7vw;
+  height: 32.6vw;
   border-radius: 12px;
   opacity: 0.5;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.3vw 0.5vw;
 }
 .noise {
   height: 100vh;
@@ -275,7 +268,6 @@ section {
   width: 94.5vw;
   height: 28.5vw;
   background-color: #230028;
-  border: 2px solid black;
   border-radius: 12px;
   margin-left: 1vw;
   margin-top: 4.2vw;
@@ -803,7 +795,6 @@ section {
   width: 34.5vw;
   height: 43.5vw;
   background-color: #230028;
-  border: 2px solid black;
   border-radius: 12px;
   margin-left: 1.1vw;
   margin-top: 3vw;
@@ -812,7 +803,6 @@ section {
   width: 34.9vw;
   height: 34.4vw;
   background-color: #230028;
-  border: 2px solid black;
   border-radius: 12px;
   margin-left: 20vw;
   margin-top: 12vw;
@@ -834,17 +824,23 @@ section {
   margin-top: -6vw;
 }
 .finger {
+  width: 18.98vw;
+  height: 26.3vw;
   position: absolute;
-  margin-left: 8.9vw;
-  margin-top: 6vw;
+  margin-left: 7.9vw;
+  margin-top: 4.5vw;
 }
 .scan-anim {
+  width: 39.4vw;
+  height: 7.57vw;
   position: absolute;
-  margin-left: -2.2vw;
+  margin-left: -2.5vw;
   margin-top: -1vw;
   animation: UpDown 3s linear infinite;
 }
 .stat-bar {
+  width: 24.8vw;
+  height: 3vw;
   position: absolute;
   margin-left: 6.2vw;
   margin-top: 13vw;
@@ -859,12 +855,16 @@ section {
   margin-top: 10.5vw;
 }
 .loading1 {
+  width: 2.73vw;
+  height: 2.73vw;
   position: absolute;
   margin-left: 10.35vw;
   margin-top: 13.15vw;
   animation: loading 2s linear infinite;
 }
 .stat-bar2 {
+  width: 24.8vw;
+  height: 3vw;
   position: absolute;
   margin-left: 6.2vw;
   margin-top: 21vw;
@@ -879,6 +879,8 @@ section {
   margin-top: 18.8vw;
 }
 .loading2 {
+  width: 2.73vw;
+  height: 2.73vw;
   position: absolute;
   margin-left: 10.35vw;
   margin-top: 21.19vw;
@@ -886,6 +888,8 @@ section {
   animation-delay: 1s;
 }
 .stat-bar3 {
+  width: 24.8vw;
+  height: 3vw;
   position: absolute;
   margin-left: 6.2vw;
   margin-top: 29vw;
@@ -900,6 +904,8 @@ section {
   margin-top: 26.8vw;
 }
 .loading3 {
+  width: 2.73vw;
+  height: 2.73vw;
   position: absolute;
   margin-left: 10.35vw;
   margin-top: 29.15vw;
@@ -907,6 +913,8 @@ section {
   animation-delay: 1.5s;
 }
 .stat-bar4 {
+  width: 24.8vw;
+  height: 3vw;
   position: absolute;
   margin-left: 6.2vw;
   margin-top: 37vw;
@@ -921,6 +929,8 @@ section {
   margin-top: 34.8vw;
 }
 .loading4 {
+  width: 2.73vw;
+  height: 2.73vw;
   position: absolute;
   margin-left: 10.35vw;
   margin-top: 37.16vw;
@@ -928,70 +938,84 @@ section {
   animation-delay: 2.5s;
 }
 .circle-stable {
-  margin-left: -51vw;
+  width: 8.6vw;
+  height: 9.3vw;
+  margin-left: -55vw;
   margin-bottom: 27.3vw;
 }
 .mech1 {
+  width: 2.18vw;
+  height: 2.18vw;
   margin-left: -5.15vw;
   margin-bottom: 30.2vw;
   transform: rotate(90deg) translateX(3.65vw) rotate(-90deg);
   animation: mech-1 2s linear infinite;
 }
 .mech-mid {
+  width: 3.35vw;
+  height: 3.35vw;
   margin-left: -3.3vw;
   margin-bottom: 29.7vw;
   transform: rotate(90deg) translateX(1vw) rotate(-90deg);
   animation: mech-mid 1s linear infinite;
 }
 .circle-stable2 {
-  margin-left: -6vw;
-  margin-bottom: 10.3vw;
-}
-.circle2 {
-  margin-left: -7.4vw;
-  margin-bottom: 11.15vw;
-  transform: rotate(90deg) translateX(0.5vw) rotate(-90deg);
-  animation: circle-2 2s linear infinite;
+  width: 8.6vw;
+  height: 9.3vw;
+  margin-left: -7.5vw;
+  margin-bottom: 13.3vw;
 }
 .mech2 {
-  margin-left: -5.15vw;
-  margin-bottom: 12.8vw;
+  width: 2.18vw;
+  height: 2.18vw;
+  margin-left: -6.15vw;
+  margin-bottom: 16.8vw;
   transform: rotate(90deg) translateX(3.65vw) rotate(-90deg);
-  animation: mech-2 1s linear infinite;
+  animation: mech-2 2s linear infinite;
 }
 .mech-mid2 {
-  margin-left: -2.3vw;
-  margin-bottom: 12.7vw;
+  width: 3.35vw;
+  height: 3.35vw;
+  margin-left: -3.3vw;
+  margin-bottom: 16.7vw;
   transform: rotate(90deg) translateX(1vw) rotate(-90deg);
-  animation: mech-mid2 1.3s linear infinite;
+  animation: mech-mid2 1s linear infinite;
 }
 .circle-stable3 {
-  margin-left: -6vw;
-  margin-bottom: -6.7vw;
-  transform: rotate(90deg) translateX(3.2vw) rotate(-90deg);
-  animation: stable3 2s linear infinite;
-}
-.circle3 {
-  margin-left: -7.4vw;
-  margin-bottom: -5.85vw;
+  width: 8.6vw;
+  height: 9.3vw;
+  margin-left: -7vw;
+  margin-bottom: -4vw;
 }
 .mech3 {
+  width: 2.18vw;
+  height: 2.18vw;
   margin-left: -5.5vw;
-  margin-bottom: -3.7vw;
-  transform: rotate(90deg) translateX(3.55vw) rotate(-90deg);
-  animation: mech-3 1s linear infinite;
+  margin-bottom: -1.7vw;
+  transform: rotate(90deg) translateX(3.65vw) rotate(-90deg);
+  animation: mech-2 2s linear infinite;
 }
 .mech-mid3 {
-  margin-left: -2.3vw;
-  margin-bottom: -4.3vw;
+  width: 3.35vw;
+  height: 3.35vw;
+  margin-left: -3.3vw;
+  margin-bottom: -2.3vw;
   transform: rotate(90deg) translateX(1vw) rotate(-90deg);
-  animation: mech-mid3 1.3s linear infinite;
+  animation: mech-mid3 1s linear infinite;
+}
+.blocks {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 21vw;
+  padding: 1vw 3vw;
+  flex-wrap: nowrap;
 }
 .block-1 {
   width: 34.5vw;
   height: 32.2vw;
   background-color: #230028;
-  border: 2px solid black;
   border-radius: 12px;
   margin-left: 2vw;
   margin-top: 4vw;
@@ -1001,7 +1025,6 @@ section {
   width: 34.5vw;
   height: 32.2vw;
   background-color: #230028;
-  border: 2px solid black;
   border-radius: 12px;
   margin-right: 153vw;
   margin-top: 4vw;
@@ -1009,35 +1032,58 @@ section {
 }
 .human-color {
   background-image: url('../images/human-color.svg');
+  background-size: contain;
   width: 23.57vw;
   height: 23.8vw;
   position: absolute;
   margin-top: 4vw;
-  margin-left: 5.5vw;
+  margin-left: 5vw;
   opacity: 0.7;
   transform: scale(1.2);
 }
 .human-color:hover {
   width: 23.57vw;
-  height: 22.8vw;
-  background-image: url('../images/person.svg');
+  height: 21.8vw;
+  background-image: url(../images/person.svg);
   opacity: 0.8;
-  transform: scale(1.25);
-  margin-top: 4.5vw;
+  transform: scale(1.3);
+  margin-top: 4.9vw;
+  margin-left: 5.3vw;
 }
 .mask1 {
-  width: 36.6vw;
+  width: 23.6vw;
   height: 32.4vw;
-  margin-left: -0.1vw;
-  margin-top: -2vw;
-  background-image: url('../images/mask1-anim.svg');
-  animation: mask-anim 4s steps(1) infinite;
+  margin-left: 5.5vw;
+  margin-top: -1.5vw;
+  background-image: url(../images/mask1.svg);
+  background-size: contain;
+  animation: color-change1 2s linear infinite;
+}
+.mask2 {
+  width: 36.4vw;
+  height: 49vw;
+  position: absolute;
+  margin-left: -73.2vw;
+  margin-top: -9.5vw;
+  background-image: url(../images/lime-mask13.svg);
+  background-size: contain;
+  animation: color-change2 2s linear infinite;
+  animation-delay: 2s;
+}
+.mask3 {
+  width: 23.6vw;
+  height: 32.4vw;
+  margin-left: 5.8vw;
+  margin-top: -1.5vw;
+  background-image: url(../images/mask3.svg);
+  background-size: contain;
+  animation: color-change3 2s linear infinite;
+  animation-delay: 3s;
 }
 .block-3 {
   width: 34.5vw;
   height: 32.2vw;
   background-color: #230028;
-  border: 2px solid black;
   border-radius: 12px;
   margin-left: -263vw;
   margin-bottom: -72vw;
@@ -1047,7 +1093,6 @@ section {
   width: 34.5vw;
   height: 32.2vw;
   background-color: #230028;
-  border: 2px solid black;
   border-radius: 12px;
   margin-right: 2.5vw;
   margin-bottom: -72.5vw;
@@ -1055,32 +1100,32 @@ section {
 }
 .robot-color {
   background-image: url('../images/robot.svg');
+  background-size: contain;
   width: 23.57vw;
   height: 23.8vw;
   position: absolute;
   margin-top: 4vw;
-  margin-left: 5.3vw;
+  margin-left: 4.8vw;
   opacity: 0.7;
   transform: scale(1.2);
 }
 .robot-color:hover {
-  background-image: url('../images/robot-bw.svg');
-  width: 23.57vw;
+  background-image: url(../images/robot-bw.svg);
+  width: 23.3vw;
   height: 21.7vw;
   opacity: 0.8;
-  transform: scale(1.25);
-  margin-top: 5vw;
-  margin-left: 5vw;
+  transform: scale(1.3);
+  margin-top: 5.1vw;
+  margin-left: 5.05vw;
 }
 .block-finish {
   position: relative;
   width: 89.4vw;
   height: 21.17vw;
   background-color: #230028;
-  border: 2px solid black;
   border-radius: 12px;
   margin-top: 37vw;
-  margin-left: 1.8vw;
+  margin-left: 5vw;
 }
 .scan-done {
   font-family: 'Arame Thin', sans-serif;
@@ -1097,23 +1142,25 @@ section {
   margin-top: 1vw;
 }
 .bar {
+  width: 46.8vw;
+  height: 4.76vw;
   position: absolute;
   margin-top: 3vw;
-  margin-left: 24vw;
+  margin-left: 21vw;
 }
 .loading-finish {
-  background-image: url('../images/loading-finish.svg');
-  width: 4.2vw;
-  height: 3.2vw;
+  background-image: url(../images/loading-finish.svg);
+  width: 45.7vw;
+  height: 3.8vw;
   position: absolute;
-  animation: loading-finish 2s steps(1) infinite;
+  animation: loading-finish 4s steps(1) infinite;
   margin-top: 3.5vw;
-  margin-left: 34.5vw;
+  margin-left: 21.5vw;
   background-size: 200vw 100%;
 }
 .basement {
   width: 100%;
-  height: 8vw;
+  height: 10.8vw;
   display: flex;
   position: relative;
   align-items: center;
